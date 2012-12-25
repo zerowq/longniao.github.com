@@ -1,11 +1,345 @@
----
-layout: default
-title: ..Blog
----
-<h2>{{ page.title }}</h2>
-<p>....</p>
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>简历 · Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead">
+  <div class="container">
+    <h1>庞鹤 <small>Henry Pang</small></h1>
+    <p class="lead">An Developer @Beijing, China</a>
+  </div>
+</header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#overview"><i class="icon-chevron-right"></i> 个人概述</a></li>
+          <li><a href="#intention"><i class="icon-chevron-right"></i> 求职意向</a></li>
+          <li><a href="#experience"><i class="icon-chevron-right"></i> 工作经验</a></li>
+          <li><a href="#education"><i class="icon-chevron-right"></i> 教育背景</a></li>
+          <li><a href="#others"><i class="icon-chevron-right"></i> 其他信息</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Overview================================================== -->
+        <section id="overview">
+          <div class="page-header">
+            <h2>个人概述 <small>overview</small></h2>
+          </div>
+          <table class="table table-bordered table-striped">
+            <tbody>
+             <tr>
+               <td style="width: 100px;"><b>姓名</b></td>
+               <td>庞鹤</td>
+               <td style="width: 100px;"><b>性别</b></td>
+               <td>男</td>
+            </tr>
+            <tr>
+               <td><b>出生日期</b></td>
+               <td>1983年01月</td>
+               <td><b>籍贯</b></td>
+               <td>河北</td>
+             </tr>
+            <tr>
+               <td><b>手机</b></td>
+               <td>138-1155-2205</td>
+               <td><b>邮箱</b></td>
+               <td>longniao@gmail.com</td>
+             </tr>
+            <tr>
+               <td><b>英语水平</b></td>
+               <td colspan="3">读写熟练</td>
+             </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;"></th>
+               <th>专业技能</th>
+             </tr>
+            </thead>
+			<tbody>
+             <tr>
+               <td>熟练</td>
+               <td>Php, Mysql, (X)HTML + CSS + JavaScript</td>
+             </tr>
+             <tr>
+               <td>掌握</td>
+               <td>Linux, Nginx, Apache, MongoDB, Golang</td>
+             </tr>
+             <tr>
+               <td>了解</td>
+               <td>Java, C, Python, HTML5, Solr, LVS, HA, </td>
+             </tr>
+             <tr>
+               <td>其它</td>
+               <td>Git, SVN</td>
+             </tr>
+            </tbody>
+          </table>
+
+<pre class="prettyprint linenums">
+六年以上的互联网领域从业的经验，文档撰写、系统设计、网站架构、数据库设计，PHP开发，前端优化等，均有很多项目经验。
+喜欢产品研究，对一些好玩的，实用的功能与应用有很浓厚的兴趣。 
+伪极客，关注大数据，语音通讯。
+</pre>
+        </section>
+
+        <!-- Intention================================================== -->
+		<section id="intention">
+          <div class="page-header">
+            <h2>求职意向 <small>intention</small></h2>
+          </div>
+          <table class="table table-bordered table-striped">
+            <tbody>
+             <tr>
+               <td style="width: 100px;"><b>期望工作性质</b></td>
+               <td>全职</td>
+             </tr>
+             <tr>
+               <td><b>期望从事职业</b></td>
+               <td>高级研发工程师、系统分析师/架构师、产品经理/主管</td>
+             </tr>
+             <tr>
+               <td><b>期望工作地区</b></td>
+               <td>北京</td>
+             </tr>
+             <tr>
+               <td><b>目前状况</b></td>
+               <td>目前处于离职状态</td>
+             </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Experience================================================== -->
+        <section id="experience">
+          <div class="page-header">
+            <h2>工作经验 <small>experience</small></h2>
+          </div>
+
+          <h3>时尚传媒集团 | 全媒体事业部 | 架构师 <small class="nav pull-right">2011/05 -- 2012/12</small></h3>
+          <p>负责时尚传媒集团旗下全媒体事业部网站部分和移动互联网部分的支持工作，包括对外项目合作，网站设计开发优化，全媒体内部基础平台的设计开发等工作。</p>
+          <h3>主要项目</h3>
+          <h4>Trends SSO</h4>
+<pre class="prettyprint linenums">
+项目描述: 对各个入口用户实行统一登录入口，记录用户日志，行为分析，数据挖掘提供数据基础。
+软件环境: Centos, Golang, Mongodb
+开发工具: LiteIDE
+</pre>
+          <ul>
+            <li>分析产品需求，确定产品结构及部署方案，采用golang+mongodb开发</li>
+            <li>实时收集用户日志，导入到Hbase</li>
+            <li>平均单次请求100ms内，单机并发达10万数量级</li>
+          </ul>
+
+          <h4>化妆品库</h4>
+<pre class="prettyprint linenums">
+项目描述: 包括产品评论，打分，试用等。
+软件环境: Centos, Nginx, Php, Mysql, Redis, CodeIgniter
+开发工具: Editplus
+</pre>
+          <ul>
+            <li>Nginx反向代理，Rsync同步，主从数据库，热数据内存缓存</li>
+            <li>评论、评分等数据表以产品为基准进行散列分表</li>
+            <li>新浪微博，QQ，人人，豆瓣等开放平台登录</li>
+            <li>Solr产品搜索</li>
+          </ul>
+
+          <h4>CUTV时尚视频频道</h4>
+<pre class="prettyprint linenums">
+项目描述: 时尚与CUTV共建的时尚频道。
+软件环境: Centos, Nginx, Php, Mysql, Redis, SOAP
+开发工具: Editplus
+</pre>
+          <ul>
+            <li>编辑数据提交接口</li>
+            <li>根据CUTV接口自动抓取数据并入库</li>
+            <li>对移动端提供数据支持</li>
+          </ul>
+
+          <h4>海尔卡萨帝</h4>
+<pre class="prettyprint linenums">
+项目描述: 分析海尔卡萨帝项目的功能点，撰写项目文档，提供系统安全建议，并负责技术指导。
+软件环境: Centos, Apache, Php, Mysql, Memcached, Discuz X1.5
+开发工具: Editplus
+</pre>
+          <ul>
+            <li>编辑安全检测脚本，定期执行检查，并自动反馈结果</li>
+            <li>配合运营人员定期撰写项目报告</li>
+            <li>对服务器优化</li>
+          </ul>
+
+          <h4>时尚伊人先生网</h4>
+<pre class="prettyprint linenums">
+项目描述: 保障WEB端正常运行，性能调优，理解产品需求，制度开发计划并把握进度。
+软件环境: Centos, CDN, Nginx, Apache, Php, Mysql, Memcached
+开发工具: Editplus
+</pre>
+          <ul>
+            <li>配合数据部门搭建Hadoop集群</li>
+            <li>网站日常维护，开发与优化</li>
+          </ul>
+
+<hr class="bs-docs-separator">
+
+          <h3>时尚传媒集团 | 软件工程师 <small class="nav pull-right">2009/03 -- 2010/10</small></h3>
+          <p>负责时尚集团旗下时尚伊人网、时尚先生网开发维护等工作。</p>
+          <h3>主要项目</h3>
+ 
+          <h4>时尚伊人、先生网</h4>
+<pre class="prettyprint linenums">
+项目描述: 时尚伊人、先生网是时尚集团新媒体战略试点，是时尚COSMOPLITAN、时尚先生两本杂志的官网。
+软件环境: Centos, CDN, Nginx, Apache, Php, Mysql, Memcached
+开发工具: Editplus
+</pre>
+          <ul>
+            <li>网站规划，服务器购买，环境搭建，程序调整，数据迁移</li>
+            <li>时尚论坛，SNS，商城，广告等系统搭建及流程优化</li>
+            <li>与YOKA，太平洋女性等网站内容合作及接口</li>
+            <li>协调美工，技术，编辑之间的工作</li>
+          </ul>
+
+<hr class="bs-docs-separator">
+
+          <h3>中国数码 | 互联网部 | 研发工程师 <small class="nav pull-right">2006/10 -- 2009/3</small></h3>
+          <p>互联网研发部所属项目组，哈票项目组开发工程师，数商项目组开发工程师，曾担任多维项目开发组长。负责企业内部产品功能开发，维护等工作，以及涉及文档撰写，与产品，测试部门协调等工作。</p>
+          <h3>主要项目</h3>
+
+          <h4>多维新闻网</h4>
+<pre class="prettyprint linenums">
+项目描述: 多维新闻网是中企动力收购的海外中文新闻门户网站
+软件环境: Centos, Apache, Php, Mysql
+开发工具: Zend Studio, Editplus, Navicat
+</pre>
+          <ul>
+            <li>作为开发组长，布置多维网服务器环境，与产品经理勾通，明确项目需求，分配开发任务</li>
+            <li>基于WordPress MU进行多维网多用户博客搭建，并对海量级数据进行自动分库分表设计</li>
+          </ul>
+
+          <h4>数商建站系统</h4>
+<pre class="prettyprint linenums">
+项目描述: “数商Z”是一套企业建站系统，包括cms，论坛，邮箱，商城等各个模块，用户可以根据自身需求进行选择，构建于新网云平台。
+软件环境: Centos, VMware, Apache, Php, Mysql
+开发工具: Zend Studio, Editplus, Navicat
+</pre>
+          <ul>
+            <li>数商论坛相关模块开发</li>
+            <li>数商论坛在线编辑器开发</li>
+            <li>数商Z邮箱后台开发</li>
+            <li>数商CMS开发</li>
+          </ul>
+
+           <h4>哈票网</h4>
+<pre class="prettyprint linenums">
+项目描述: 哈票网 www.hipiao.com 是一个线上购票电子商务网站。与影院影厅座位实时同步，消费者可以根据个人喜好自由选择影院、场次、座位，透过简易的操作流程获取影票，节省现场排队购票时间。
+软件环境: Centos, Apache, Php, Mysql
+开发工具: Zend Studio, Editplus, Navicat
+</pre>
+          <ul>
+            <li>哈票网一期在线定票模块</li>
+            <li>哈票网二期小卖，红包，积分等模块业务分析，兼撰写相关文档</li>
+          </ul>
+
+        </section>
+
+        <!-- Education================================================== -->
+        <section id="education">
+          <div class="page-header">
+            <h1>教育背景 <small>education</small></h1>
+          </div>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th>时间</th>
+               <th>学校</th>
+               <th>专业</th>
+               <th>学位</th>
+             </tr>
+            </thead>
+			<tbody>
+             <tr>
+               <td>09/2002 – 07/2006</td>
+               <td>河北科技师范学院</td>
+               <td>教育技术学</td>
+               <td>学士</td>
+             </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+        <!-- Others================================================== -->
+        <section id="others">
+            <div class="page-header">
+              <h1>其它信息 <small>others</small></h1>
+            </div>
+
+            <h2>Nothing</h2>
+            <p>.</p>
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Footer ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2011-2012 Henry Pang. 
+		<a href="http://www.facebook.com/he.pang.73">Facebook</a> - 
+		<a href="http://github.com/longniao" target="_blank">GitHub</a> - 
+		<a href="http://twitter.com/longniao1" target="_blank">Twitter</a> - 
+		<a href="http://cn.linkedin.com/in/henrypang" target="_blank">Linkedin</a>
+		</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+  </body>
+</html>
